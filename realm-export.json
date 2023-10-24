@@ -313,7 +313,7 @@
           "attributes": {}
         }
       ],
-      "http://localhost:3000/uhc/metadata/": [],
+      "http://localhost:3000/uhc/saml/metadata/": [],
       "account": [
         {
           "id": "e91ba0fb-ba03-4f54-b803-76fd540d158e",
@@ -676,7 +676,7 @@
     },
     {
       "id": "456ebf2c-0b25-4f29-a3da-2420131c89d4",
-      "clientId": "http://localhost:3000/uhc/metadata/",
+      "clientId": "http://localhost:3000/uhc/saml/metadata/",
       "name": "SAML",
       "description": "",
       "rootUrl": "http://localhost:3000",
@@ -715,7 +715,7 @@
         "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
         "saml.assertion.signature": "true",
         "saml.encrypt": "true",
-        "saml_assertion_consumer_url_post": "http://localhost:3000/uhc",
+        "saml_assertion_consumer_url_post": "http://localhost:3000/uhc/saml",
         "saml.server.signature": "true",
         "saml_idp_initiated_sso_url_name": "uhc",
         "saml.artifact.binding.identifier": "ryVCtyBCvNGZZ4T0an6VjjVjo38=",
