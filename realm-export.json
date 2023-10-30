@@ -313,7 +313,7 @@
           "attributes": {}
         }
       ],
-      "http://localhost:3000/uhc/saml/metadata/": [],
+      "http://localhost:3003/uhc/saml/metadata/": [],
       "account": [
         {
           "id": "e91ba0fb-ba03-4f54-b803-76fd540d158e",
@@ -676,18 +676,18 @@
     },
     {
       "id": "456ebf2c-0b25-4f29-a3da-2420131c89d4",
-      "clientId": "http://localhost:3000/uhc/saml/metadata/",
+      "clientId": "http://localhost:3003/uhc/saml/metadata/",
       "name": "SAML",
       "description": "",
-      "rootUrl": "http://localhost:3000",
+      "rootUrl": "http://localhost:3003",
       "adminUrl": "",
-      "baseUrl": "http://localhost:3000",
+      "baseUrl": "http://localhost:3003",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "http://localhost:3000/*"
+        "http://localhost:3003/*"
       ],
       "webOrigins": [
         "http://localhost:8000"
@@ -703,9 +703,9 @@
       "frontchannelLogout": true,
       "protocol": "saml",
       "attributes": {
-        "saml_idp_initiated_sso_relay_state": "http://localhost:3000/",
+        "saml_idp_initiated_sso_relay_state": "http://localhost:3003/",
         "saml.force.post.binding": "true",
-        "post.logout.redirect.uris": "http://localhost:3000/*",
+        "post.logout.redirect.uris": "http://localhost:3003/*",
         "saml.server.signature.keyinfo.ext": "false",
         "saml.signing.certificate": "MIICzTCCAbUCBgGK90FJ9TANBgkqhkiG9w0BAQsFADAqMSgwJgYDVQQDDB9odHRwOi8vbG9jYWxob3N0OjgwMDAvbWV0YWRhdGEvMB4XDTIzMTAwMzIwMzQyNVoXDTMzMTAwMzIwMzYwNVowKjEoMCYGA1UEAwwfaHR0cDovL2xvY2FsaG9zdDo4MDAwL21ldGFkYXRhLzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJEe8xbkPXR+VG74hZEuEHucTat5ySUcBDA8OO9OqIEmwfFqFirdE/fjJs9UX4xwtw4rP40mdFmN2Xbx53SIw7zKtgPZxwyyxK/w+dzikay1q+JGSSMwSEDz0uwnf/3/X8LeFbUPccP4TRaLZudOi7giBfxwMPrW4l3+OINHP6yrRnOb+wovUVsriAquDNsC20jrIpxZkTBRe4RlT4+seAd55s4cSD2/6xlGK33MGaUHLBOymcE/8eTl6z8Oy7e8uF3dlIuKTU+7VFYhjOzZYhukrTVKoQP2JNmHBZ6Jio9i3iLUlig19EA2EzPcGTlPAHD0mk8CgegichLZKmfRx5MCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAIq7sQWVq+sQAnBKmsDmyWPy1eGJ1mhH+gR9O4X7EN5OWdHh7TpByOb9n1Qw/oHoYfeaUAykvk9EWN2mfe4Xu2r4vbbCotbAvho3L3SYuRwLrzzkytAY/BylbaGG9fsazG1msc7v85IPfaJdKsudHSAdgTeXfhY/SwE1K5TDSQQdh354SPUhaUgTG25MvclIBn/ygc1/tNN1uI7/c233brEQjI2xuM583Fnbx4B//YLDJhBR8LLWZ7jfJRYKcmvBZ+IdFymi630y/PZgvVkhW1bIrqBttBwz2IoWPae4VXNxoGPUkNZ0c701J/Y0j9XeNAcSY+xkHoSoTkgY5u8tZMw==",
         "saml.signature.algorithm": "RSA_SHA256",
@@ -715,7 +715,7 @@
         "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE",
         "saml.assertion.signature": "true",
         "saml.encrypt": "true",
-        "saml_assertion_consumer_url_post": "http://localhost:3000/uhc/saml",
+        "saml_assertion_consumer_url_post": "http://localhost:3003/uhc/saml",
         "saml.server.signature": "true",
         "saml_idp_initiated_sso_url_name": "uhc",
         "saml.artifact.binding.identifier": "ryVCtyBCvNGZZ4T0an6VjjVjo38=",
