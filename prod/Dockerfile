@@ -1,13 +1,7 @@
 FROM quay.io/keycloak/keycloak:latest as keycloak_base
 
-ENV KEYCLOAK_ADMIN <admin_name>
-ENV KEYCLOAK_ADMIN_PASSWORD <admin_password>
-ENV KC_HOSTNAME=<hostname>
-ENV KC_HOSTNAME_ADMIN_URL=https://<hostname>
 ENV KC_HOSTNAME_STRICT_HTTPS=true
 ENV KC_PROXY=edge
-
-ADD certificates /certificates
 
 COPY realm-export.json /opt/keycloak_import/
 COPY certificates /certificates
@@ -26,8 +20,6 @@ RUN chmod 644 /certificates/key.pem /certificates/cert.pem
 # Switch back to the default user
 USER 1000
 
-# The Keycloak server is configured to listen on port 8080
-EXPOSE 8080
 EXPOSE 8443
 
 # Import the realm on start-up
