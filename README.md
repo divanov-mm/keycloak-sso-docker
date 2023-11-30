@@ -15,7 +15,6 @@ docker run -p 8080:8080 keycloak-sso
 ```
 
 - For stage/production
-NOTE: make sure your host has these env variables set
 ```sh
 docker run -e KEYCLOAK_ADMIN=$KEYCLOAK_ADMIN \
     -e KEYCLOAK_ADMIN_PASSWORD=$KEYCLOAK_ADMIN_PASSWORD \
@@ -23,6 +22,7 @@ docker run -e KEYCLOAK_ADMIN=$KEYCLOAK_ADMIN \
     -e KC_HOSTNAME_ADMIN_URL=$KC_HOSTNAME_ADMIN_URL \
     -p 8443:8443 keycloak-sso
 ```
+NOTE: make sure your host has these env variables set
 
 ## Regenerate private key and certificates
 - Follow these steps and generate private key and certificate - https://medium.com/keycloak/running-keycloak-with-tls-self-signed-certificate-d8da3e10c544
